@@ -4,13 +4,15 @@ from pathlib import Path
 import pandas as pd
 
 from src.data_ingestion import load_datasets
+from src.data_cleaning import clean_catalogue
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
 def build_dataset():
     products, catalogue, _ = load_datasets()
-
+    catalogue = clean_catalogue(catalogue)
+    
     # Use historical editions with complete observation windows.
     snapshot = catalogue.loc[
         catalogue["CatEdition"].between(88, 93)
