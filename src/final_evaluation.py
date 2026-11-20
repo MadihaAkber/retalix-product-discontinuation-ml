@@ -28,7 +28,7 @@ def main():
         "models/logistic_regression_tuned_v1.joblib"
     )
 
-    predictions = model.predict(X_test)
+    predictions = (model.predict_proba(X_test)[:, 1] >= 0.10).astype(int)
     probabilities = model.predict_proba(X_test)[:, 1]
 
     figures = Path("outputs/figures")
