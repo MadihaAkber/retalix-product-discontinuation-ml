@@ -39,6 +39,21 @@ Decision threshold: 0.10
 
 ## Installation
 Install the dependencies using:
+## Reproduce the Machine Learning Pipeline
+
+After installing the dependencies and placing the original
+Retalix dataset files in the expected data folder, run:
+
+    python run_pipeline.py
+
+This command builds the modelling dataset, trains the baseline
+models, tunes the models using chronological cross-validation,
+evaluates predictions and generates a simulated monitoring report.
+
+The trained models are saved in the models/ folder.
+Evaluation results are saved in outputs/.
+
+The raw dataset and trained model files are excluded from GitHub.
 
 `pip install -r requirements.txt`
 
