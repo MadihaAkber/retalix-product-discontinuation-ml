@@ -1,0 +1,9 @@
+{
+    "best_parameters": {
+        "classifier__C": 1.0,
+        "classifier__class_weight": null
+    },
+    "best_cv_average_precision": 0.6875925067629604,
+    "number_of_candidates": 6,
+    "number_of_folds": 3
+}

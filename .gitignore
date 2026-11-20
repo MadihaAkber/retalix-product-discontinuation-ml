@@ -1,0 +1,29 @@
+# Coursework datasets
+data/**/*.csv
+data/**/*.xlsx
+data/**/*.zip
+
+# Python temporary files
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+
+# Generated model files
+models/*.joblib
+models/*.pkl
+
+# Environment secrets
+.env
+
+# Raw and processed datasets
+data/
+__MACOSX/
+
+# Python cache and test files
+.pytest_cache/
+__pycache__/
+*.pyc
+
+# Trained models
+models/

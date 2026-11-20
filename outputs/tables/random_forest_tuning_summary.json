@@ -1,0 +1,11 @@
+{
+    "best_parameters": {
+        "classifier__n_estimators": 100,
+        "classifier__min_samples_leaf": 10,
+        "classifier__max_features": "sqrt",
+        "classifier__max_depth": null
+    },
+    "best_cv_average_precision": 0.6856424417560317,
+    "number_of_candidates": 6,
+    "number_of_folds": 3
+}

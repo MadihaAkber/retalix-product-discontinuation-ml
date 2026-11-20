@@ -1,0 +1,18 @@
+{
+  "selected_model": "Logistic Regression",
+  "model_version": "logistic_regression_tuned_v1",
+  "selection_metric": "cross-validation average precision",
+  "cv_average_precision": 0.6876,
+  "threshold": 0.1,
+  "threshold_selection_edition": 92,
+  "final_test_edition": 93,
+  "business_objective": "Identify products at risk of discontinuation 24 weeks before range refresh",
+  "decision_rationale": "Logistic Regression had slightly higher mean chronological CV average precision than Random Forest. Threshold 0.1 achieved the highest F1 among tested thresholds on validation edition 92.",
+  "limitations": [
+    "Performance varies across catalogue editions",
+    "False positives increase product review workload",
+    "Some discontinued products remain undetected",
+    "Products without a Week -24 snapshot are excluded",
+    "Snapshot feature availability must be confirmed for operational use"
+  ]
+}

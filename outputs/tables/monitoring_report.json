@@ -1,0 +1,8 @@
+{
+    "feature": "SalePriceIncVAT",
+    "training_median": 29.99,
+    "future_median": 29.99,
+    "percentage_change": 0.0,
+    "drift_alert": false,
+    "alert_threshold_percent": 20
+}
